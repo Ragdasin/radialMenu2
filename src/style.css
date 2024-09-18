@@ -1,0 +1,19 @@
+#app {
+  height: 100vh;
+  width: 100vw;
+  background-color: #f0f0f0;
+}
+
+.menu-item {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #3498db;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
