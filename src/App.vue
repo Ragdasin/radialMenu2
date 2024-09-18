@@ -88,6 +88,7 @@ setup() {
     verticalMenuX,
     pizzaAlert,
     sushiAlert,
+    pastaAlert,
   };
 },
 };
