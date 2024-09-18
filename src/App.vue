@@ -22,6 +22,7 @@
     v-if="!menuHidden"
     class="menu-item"
     :style="{ top: topMenuY, left: verticalMenuX }"
+   
   >
     pasta
   </div>
@@ -29,6 +30,7 @@
     v-if="!menuHidden"
     class="menu-item"
     :style="{ top: bottomMenuY, left: verticalMenuX }"
+    @click.stop="sushiAlert"
   >
     sushi
   </div>
@@ -51,6 +53,10 @@ setup() {
 
   function pizzaAlert(event) {
     alert('Mamma mia!');
+  }
+
+  function sushiAlert(event) {
+    alert('Irasshaimase!');
   }
 
   function showRadialMenu(event) {
@@ -81,6 +87,7 @@ setup() {
     bottomMenuY,
     verticalMenuX,
     pizzaAlert,
+    sushiAlert,
   };
 },
 };
